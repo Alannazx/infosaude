@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InfoSaúde Digital</title>
+<meta name="description" content="Site educativo sobre doenças, prevenção e saúde digital.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#inicio" class="brand"><span class="mark">♥</span> InfoSaúde <b>Digital</b></a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav id="nav" aria-label="Principal">
+      <a href="#inicio">Início</a><a href="#doencas">Doenças</a><a href="#ists">ISTs</a><a href="#prevencao">Prevenção</a><a href="#saude-digital">Saúde Digital</a>
+    </nav>
+  </div>
+</header>
+<div class="aviso" role="note">ℹ️ Conteúdo educativo. Não substitui consultas, exames, diagnóstico ou orientação de profissionais de saúde.</div>
+
+<main id="main">
+<section id="inicio" class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <h1>Conhecimento e tecnologia a favor da saúde</h1>
+      <p>Explore informações sobre doenças, prevenção e as inovações digitais que estão transformando o cuidado com a saúde.</p>
+      <div class="btns"><a class="btn" href="#doencas">Explorar doenças</a><a class="btn alt" href="#saude-digital">Conhecer a saúde digital</a></div>
+    </div>
+    <div class="art" aria-hidden="true">
+      <img src="assets/logo.png" alt="">
+      <span class="fl f1">🩺</span><span class="fl f2">➕</span><span class="fl f3">💻</span><span class="fl f4">📋</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <div class="intro">
+    <h2>Por que conhecer a saúde?</h2>
+    <p>Conhecer as doenças ajuda a reconhecer riscos, adotar hábitos de prevenção e buscar cuidado no momento certo. A tecnologia amplia o acesso à informação e aos serviços, mas deve ser usada com responsabilidade: com fontes confiáveis, cuidado com a privacidade e orientação de profissionais.</p>
+  </div>
+  <h2>Categorias</h2>
+  <div class="grid" id="cats"></div>
+  <div class="cta">
+    <div><h3>Conheça as ISTs e saiba como se prevenir</h3><p>Informação sem preconceito é o primeiro passo para o cuidado.</p></div>
+    <a class="btn red" href="#ists">Ver todas as ISTs</a>
+  </div>
+</section>
+
+<section id="doencas" class="sec wrap">
+  <h2>Catálogo de doenças</h2>
+  <div class="tools">
+    <label class="sr" for="q">Pesquisar doença pelo nome</label>
+    <input id="q" type="search" placeholder="🔍 Pesquisar doença pelo nome..." autocomplete="off">
+    <div id="chips" class="chips" role="group" aria-label="Filtrar por categoria"></div>
+  </div>
+  <div class="grid" id="list" aria-live="polite"></div>
+  <p id="none" class="none" hidden>Nenhuma doença encontrada. Tente outro nome ou limpe o filtro de categoria.</p>
+</section>
+
+<section id="ists" class="sec ists">
+  <div class="wrap">
+    <h2>Infecções Sexualmente Transmissíveis (ISTs)</h2>
+    <div class="box">
+      <p><b>O que são?</b> Infecções causadas por vírus, bactérias ou outros microrganismos, transmitidas principalmente por contato sexual (vaginal, anal ou oral). Algumas também podem passar por sangue ou de mãe para filho na gestação, parto ou amamentação.</p>
+      <p><b>Por que testar?</b> Muitas ISTs não causam sintomas, por isso a pessoa pode ter e transmitir a infecção sem saber. Só a testagem e a avaliação de profissionais confirmam uma infecção. Prevenção, diagnóstico e tratamento adequados protegem a saúde de todos.</p>
+      <p><b>Prevenção:</b> a camisinha é importante, mas a proteção varia conforme a infecção e a prática. Há vacinas para HPV e hepatite B e outras estratégias reconhecidas pelo Ministério da Saúde. Os serviços do SUS atendem com respeito e sigilo, sem julgamentos.</p>
+    </div>
+    <div class="grid" id="istlist"></div>
+  </div>
+</section>
+
+<section id="prevencao" class="sec wrap">
+  <h2>Prevenção e cuidados com a saúde</h2>
+  <div class="grid sm" id="prev"></div>
+  <p class="note">As medidas preventivas variam de acordo com cada doença. Orientações de profissionais de saúde são sempre importantes.</p>
+</section>
+
+<section id="saude-digital" class="sec dig">
+  <div class="wrap">
+    <h2>Como a tecnologia transforma a saúde?</h2>
+    <div class="grid tech">
+      <article class="card tc"><div class="ic">📋</div><h3>Prontuários eletrônicos</h3>
+        <p>Permitem registrar e consultar informações clínicas em sistemas digitais, facilitando a organização do histórico do paciente, a continuidade do atendimento e a comunicação entre profissionais autorizados.</p>
+        <h4>Exemplos</h4><p>Histórico de consultas, exames e vacinas acessível a equipes autorizadas.</p>
+        <h4>Benefícios</h4><ul><li>Organização das informações médicas</li><li>Acesso mais ágil ao histórico clínico</li><li>Apoio à continuidade do cuidado</li><li>Redução de alguns problemas de registros em papel</li></ul>
+        <h4>Limitações e cuidados</h4><p>Exigem privacidade, segurança da informação e acesso apenas por pessoas autorizadas.</p></article>
+      <article class="card tc"><div class="ic">💻</div><h3>Telemedicina</h3>
+        <p>Usa tecnologias de comunicação para permitir certas formas de atendimento e acompanhamento à distância.</p>
+        <h4>Exemplos</h4><ul><li>Consultas por videochamada</li><li>Orientações médicas remotas</li><li>Acompanhamento de pacientes</li><li>Discussão de casos entre profissionais, conforme as regras aplicáveis</li></ul>
+        <h4>Benefícios</h4><p>Mais facilidade de acesso em algumas situações e menos deslocamento.</p>
+        <h4>Limitações</h4><p>Nem todo problema pode ser avaliado à distância. Algumas situações exigem exame presencial ou atendimento de urgência.</p></article>
+      <article class="card tc"><div class="ic">📱</div><h3>Aplicativos de saúde</h3>
+        <p>Ajudam a organizar consultas, lembrar vacinas, acompanhar atividade física, registrar informações de saúde e acessar conteúdos educativos.</p>
+        <h4>Exemplos</h4><p>Agendas de consultas, lembretes de vacinação e contadores de atividade.</p>
+        <h4>Benefícios</h4><p>Praticidade, organização e acesso à educação em saúde.</p>
+        <h4>Limitações e cuidados</h4><ul><li>Nem todo aplicativo traz informação confiável: verifique a origem</li><li>Não substituem avaliação profissional</li><li>Dados médicos exigem cuidado com a privacidade</li></ul></article>
+    </div>
+
+    <h2 class="mt">Benefícios e desafios da saúde digital</h2>
+    <div class="two">
+      <div class="col good"><h3>✅ Benefícios</h3><ul>
+        <li>Mais facilidade de acesso a certas informações e serviços</li><li>Organização dos registros médicos</li><li>Possibilidade de acompanhamento à distância</li><li>Apoio à comunicação entre profissionais</li><li>Maior acesso à educação em saúde</li></ul></div>
+      <div class="col bad"><h3>⚠️ Desafios</h3><ul>
+        <li>Desigualdade de acesso à internet e a dispositivos</li><li>Necessidade de proteger dados pessoais e médicos</li><li>Risco de desinformação</li><li>Limitações do atendimento remoto</li><li>Necessidade de acessibilidade digital e orientação adequada</li></ul></div>
+    </div>
+    <p class="closing">A melhor saúde digital combina tecnologia, conhecimento científico, segurança e atendimento humanizado.</p>
+  </div>
+</section>
+
+<section id="fontes" class="sec wrap">
+  <h2>Fontes e confiabilidade</h2>
+  <p>Os textos foram elaborados a partir de informações gerais de instituições oficiais. Cada página de doença traz um link para a ficha da OMS. Consulte também as páginas das instituições abaixo para informações atualizadas.</p>
+  <div class="src" id="src-main">
+    <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Ministério da Saúde do Brasil ↗</a>
+    <a href="https://www.gov.br/aids/pt-br" target="_blank" rel="noopener noreferrer">Departamento de HIV/Aids, Tuberculose, Hepatites Virais e ISTs ↗</a>
+    <a href="https://www.who.int/health-topics" target="_blank" rel="noopener noreferrer">Organização Mundial da Saúde (OMS) ↗</a>
+    <a href="https://www.paho.org/pt" target="_blank" rel="noopener noreferrer">OPAS ↗</a>
+    <a href="https://portal.fiocruz.br" target="_blank" rel="noopener noreferrer">Fiocruz ↗</a>
+  </div>
+  <p class="note">Texto elaborado em outubro de 2026. Ainda não houve revisão por profissional de saúde, e as informações podem mudar com novas recomendações.</p>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap fgrid">
+    <div><h3>InfoSaúde Digital</h3><p>Projeto educativo sobre doenças, prevenção e transformação digital da saúde. Desenvolvido para uma feira de ciências escolar.</p></div>
+    <div><h4>Seções</h4><a href="#inicio">Início</a><a href="#doencas">Doenças</a><a href="#ists">ISTs</a><a href="#prevencao">Prevenção</a><a href="#saude-digital">Saúde Digital</a></div>
+    <div><h4>Fontes</h4><a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a><a href="https://www.who.int/health-topics" target="_blank" rel="noopener noreferrer">OMS</a><a href="https://www.paho.org/pt" target="_blank" rel="noopener noreferrer">OPAS</a><a href="https://portal.fiocruz.br" target="_blank" rel="noopener noreferrer">Fiocruz</a></div>
+  </div>
+  <p class="fnote">Conteúdo educativo, sem finalidade de diagnóstico ou tratamento. Procure sempre um profissional de saúde. Este site não coleta nem armazena dados dos visitantes.</p>
+</footer>
+
+<button id="top" class="top" aria-label="Voltar ao início" hidden>↑</button>
+<dialog id="dlg" aria-labelledby="dt"><div class="dhead"><h2 id="dt"></h2><button id="x" aria-label="Fechar">✕</button></div><div id="db"></div></dialog>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
